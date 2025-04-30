@@ -1,0 +1,124 @@
+<!-- ✅ index.html - 의미론적 태그 적용 & 출력 동일 유지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamburins Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: white;
+      color: black;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      z-index: 1000;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+    }
+    nav, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    nav a {
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box input {
+      padding: 8px 48px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+    }
+    .search-box input::placeholder {
+      color: white;
+    }
+    .search-box .icon {
+      position: absolute;
+      left: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+    }
+    .nav-right .icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      color: white;
+    }
+    main.hero {
+      height: 100vh;
+      background: url('https://web-resource.tamburins.com/mainbanner/02690f61-04ff-49a3-b45b-ef10d36960b0/pc_main_banner_full_bottari.jpg') no-repeat center center / cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TAMBURINS</a>
+    <nav>
+      <a href="#">BOTTARI</a>
+      <a href="perfume.html">PERFUME</a>
+      <a href="#">HAND&LIP</a>
+      <a href="#">BODY</a>
+      <a href="#">HOME FRAGRANCE</a>
+      <a href="#">STORE</a>
+    </nav>
+    <div class="nav-right">
+      <div class="search-box">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </span>
+        <input type="text" placeholder="‘보타리’를 검색해 보세요" />
+      </div>
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4" />
+          <path d="M4 21v-1a7 7 0 0 1 14 0v1" />
+        </svg>
+      </span>
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 6h15l-1.5 9h-13z" />
+          <circle cx="9" cy="20" r="1" />
+          <circle cx="18" cy="20" r="1" />
+        </svg>
+      </span>
+    </div>
+  </header>
+  <main class="hero"></main>
+</body>
+</html>

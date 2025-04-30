@@ -1,0 +1,171 @@
+<!-- ✅ perfume.html - 의미론적 태그 적용 & 출력 동일 유지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamburins Clone - Perfume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: black;
+    }
+    a { text-decoration: none; color: inherit; }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav.nav-left {
+      display: flex;
+      gap: 25px;
+    }
+    nav.nav-left a {
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box input {
+      border: 1px solid #ccc;
+      padding: 8px 16px 8px 36px;
+      border-radius: 4px;
+    }
+    .search-box .icon {
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    nav.submenu {
+      margin-top: 100px;
+      padding: 20px 60px 0;
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .submenu .active {
+      border-bottom: 2px solid black;
+      padding-bottom: 6px;
+    }
+    section.perfume-list {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      padding: 40px 60px 100px;
+      flex-wrap: wrap;
+    }
+    article.perfume-item {
+      text-align: left;
+      width: 280px;
+    }
+    article.perfume-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    article.perfume-item h4 {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    article.perfume-item p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 4px;
+    }
+    article.perfume-item strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TAMBURINS</a>
+    <nav class="nav-left">
+      <a href="index.html">BOTTARI</a>
+      <a href="perfume.html">PERFUME</a>
+      <a href="#">HAND&LIP</a>
+      <a href="#">BODY</a>
+      <a href="#">HOME FRAGRANCE</a>
+      <a href="#">STORE</a>
+    </nav>
+    <div class="nav-right">
+      <div class="search-box">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </span>
+        <input type="text" placeholder="‘보타리’를 검색해 보세요" />
+      </div>
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4"/>
+          <path d="M4 21v-1a7 7 0 0 1 14 0v1"/>
+        </svg>
+      </span>
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 6h15l-1.5 9h-13z"/>
+          <circle cx="9" cy="20" r="1"/>
+          <circle cx="18" cy="20" r="1"/>
+        </svg>
+      </span>
+    </div>
+  </header>
+  <main>
+    <nav class="submenu">
+      <div class="active">퍼퓸</div>
+      <div>퍼퓸 오일</div>
+      <div>퍼퓸 밤</div>
+    </nav>
+    <section class="perfume-list">
+      <article class="perfume-item">
+        <img src="https://web-resource.tamburins.com/catalog/product/12001506/0d9b6071-c0e9-433b-a10e-5c5afe10c3b1/thumbnail_Bottari_50ml_Perfume_2.jpg" alt="보타리">
+        <h4>퍼퓸 보타리</h4>
+        <p>시원한 이끼라운드 | 부드러운 이끼와 버섯 | 앰버 머스크</p>
+        <strong>₩ 178,000</strong>
+      </article>
+      <article class="perfume-item">
+        <img src="https://web-resource.tamburins.com/catalog/product/12001384/dbe38d4d-cf77-40a5-b171-6f7516d88a4a/thumbnail_Evening_50ml_Perfume.jpg" alt="이브닝글로우">
+        <h4>퍼퓸 이브닝글로우</h4>
+        <p>노을에 물든 장미 | 라즈베리 | 머스크</p>
+        <strong>₩ 149,000</strong>
+      </article>
+      <article class="perfume-item">
+        <img src="https://web-resource.tamburins.com/catalog/product/1695801508/1e303764-6e88-444e-a7b1-0c72ecd2e542/thumbnail_50ml_Perfume_Pumkini.jpg" alt="펌키니">
+        <h4>퍼퓸 펌키니</h4>
+        <p>달콤한 호박 | 차조기잎 | 코코넛밀크</p>
+        <strong>₩ 149,000</strong>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
