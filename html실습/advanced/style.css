@@ -1,0 +1,117 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: white;
+      color: black;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      z-index: 1000;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+    }
+    nav, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    nav a {
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box input {
+      padding: 8px 48px;
+      border: 1px solid white;
+      background-color: transparent;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+    }
+    .search-box input::placeholder {
+      color: white;
+    }
+    .search-box .icon {
+      position: absolute;
+      left: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+    }
+    .nav-right .icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      color: white;
+    }
+    main.hero {
+      height: 100vh;
+      background: url('https://web-resource.tamburins.com/mainbanner/02690f61-04ff-49a3-b45b-ef10d36960b0/pc_main_banner_full_bottari.jpg') no-repeat center center / cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer {
+      background-color: #f8f8f8;
+      padding: 40px 60px 20px;
+      font-size: 14px;
+      color: #333;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 60px;
+      padding-bottom: 20px;
+    }
+    
+    .footer-section h4 {
+      font-weight: bold;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-section ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    
+    .footer-bottom {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+    
+    

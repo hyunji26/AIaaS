@@ -6,103 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tamburins Clone - Perfume</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+KR&display=swap" rel="stylesheet" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background-color: #fff;
-      color: black;
-    }
-    a { text-decoration: none; color: inherit; }
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: white;
-      padding: 20px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      border-bottom: 1px solid #ddd;
-    }
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 22px;
-      font-weight: bold;
-    }
-    nav.nav-left {
-      display: flex;
-      gap: 25px;
-    }
-    nav.nav-left a {
-      font-family: 'Playfair Display', serif;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .search-box {
-      position: relative;
-    }
-    .search-box input {
-      border: 1px solid #ccc;
-      padding: 8px 16px 8px 36px;
-      border-radius: 4px;
-    }
-    .search-box .icon {
-      position: absolute;
-      top: 50%;
-      left: 8px;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-    nav.submenu {
-      margin-top: 100px;
-      padding: 20px 60px 0;
-      display: flex;
-      gap: 30px;
-      font-weight: bold;
-      font-size: 15px;
-    }
-    .submenu .active {
-      border-bottom: 2px solid black;
-      padding-bottom: 6px;
-    }
-    section.perfume-list {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      padding: 40px 60px 100px;
-      flex-wrap: wrap;
-    }
-    article.perfume-item {
-      text-align: left;
-      width: 280px;
-    }
-    article.perfume-item img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    article.perfume-item h4 {
-      margin-top: 15px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    article.perfume-item p {
-      font-size: 14px;
-      color: #555;
-      margin-top: 4px;
-    }
-    article.perfume-item strong {
-      display: block;
-      margin-top: 10px;
-      font-size: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="perfume.css"/>
 </head>
 <body>
   <header>
@@ -167,5 +71,49 @@
       </article>
     </section>
   </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>매장안내</h4>
+        <ul>
+          <li>대한민국</li>
+          <li>일본</li>
+          <li>중국</li>
+          <li>전시</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>고객서비스</h4>
+        <ul>
+          <li>비회원 주문 조회</li>
+          <li>교환 및 반품</li>
+          <li>자주 묻는 질문</li>
+          <li>1:1문의하기</li>
+          <li>기업 구매</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>법적 고지</h4>
+        <ul>
+          <li>공지사항</li>
+          <li>이용 약관</li>
+          <li>개인정보처리방침</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>소셜 미디어</h4>
+        <ul>
+          <li>인스타그램</li>
+          <li>카카오톡</li>
+          <li>페이스북</li>
+          <li>웨이보</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Tamburins | 대표자: 강민조 | 사업자등록번호: 119-86-38589 | 주소: 서울특별시 마포구 어울마당로5길 41</p>
+    </div>
+  </footer>
+  
 </body>
 </html>
