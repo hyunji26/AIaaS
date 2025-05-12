@@ -12,6 +12,8 @@
  - perfume_Detail_page.html : perfume 상품 상세 페이지
  - perfume_Detail_page.css : perfume_Detail_page.css 전용 스타일 시트
 
+## js 과제 추가 구현 기능
+
 1. 🔽 헤더 내 네비게이션 드롭다운 (Dropdown Navigation Menu) --> 향후 마저 구현
 
 상단 메뉴(PERFUME, HAND&LIP 등)에 마우스를 올리면 하위 섹션이 자동으로 드롭다운 형태로 나타납니다.
@@ -52,7 +54,7 @@ setInterval과 transform: translateX()를 이용한 부드러운 전환 효과 �
 
 6. 🧴 상품 리스트 섹션 (Product Grid Section)
 
-Perfume 상품들을 **3열 그리드 레이아웃(Grid Layout)**으로 시각화.
+Perfume 상품들을 3열 그리드 레이아웃(Grid Layout)으로 시각화.
 
 이미지, 제품명, 노트 설명, 가격이 미니멀하고 정돈된 카드 구조로 구성되어 브랜드의 고급스러움 유지.
 
