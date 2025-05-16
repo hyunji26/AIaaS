@@ -1,0 +1,161 @@
+.search-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 33.3%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 40px;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+.search-overlay.active {
+  display: flex;
+}
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  flex: 1;
+  gap: 10px;
+}
+.input-wrapper .icon svg {
+  flex-shrink: 0;
+}
+.input-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+.input-wrapper input::placeholder {
+  color: #999;
+}
+.close-btn {
+  font-size: 22px;
+  color: #999;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.search-content h4 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.search-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.search-content ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.search-content ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.search-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search-content p {
+  font-size: 14px;
+  color: #333;
+}
+.search-content h4 + ul {
+  margin-bottom: 100px;  
+}
+.suggestion-list {
+  margin-bottom: 60px;
+}
+#suggestions {
+  margin-bottom: 150px; /* 여기 숫자 더 늘리면 더 넓어짐 */
+}
+
+
+/*슬라이더*/
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+.slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.slide .date {
+  font-size: 12px;
+  color: #888;
+}
+.slide .desc {
+  font-size: 14px;
+  color: #333;
+}
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/*드롭다운 시 메인화면 어둡게*/
+#overlay-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 998;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+#overlay-dark.show {
+  display: block;
+}

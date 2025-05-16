@@ -1,0 +1,48 @@
+#perfume-section.hidden {
+  display: none;
+}
+
+#perfume-section {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 40px 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.perfume-grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.perfume-item img {
+  width: 180px;
+  border-radius: 6px;
+}
+
+.perfume-item p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/*드롭다운 시 메인화면 어둡게*/
+#overlay-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 998;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+#overlay-dark.show {
+  display: block;
+}

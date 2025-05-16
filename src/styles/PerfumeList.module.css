@@ -1,0 +1,103 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.submenu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+  margin-top: 80px; /* Header 공간 확보 */
+}
+
+.submenu div {
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: border-color 0.3s;
+}
+
+.submenu .active {
+  border-bottom: 2px solid black;
+}
+
+.perfumeList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.perfumeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfumeItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.perfumeItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.perfumeItem h4 {
+  font-size: 18px;
+  margin: 12px 0 8px;
+  font-weight: 600;
+}
+
+.perfumeItem p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 10px;
+}
+
+.perfumeItem strong {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #000;
+}
+
+.submenu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+  margin-top: 80px; /* 헤더 여백 확보 */
+}
+
+.submenu .active {
+  border-bottom: 2px solid black;
+  padding-bottom: 6px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .perfumeIist {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+}
