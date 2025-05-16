@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로필 관리 페이지</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    header, nav, main, footer {
+      margin-bottom: 40px;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    nav li {
+      margin: 5px 0;
+    }
+    nav a {
+      color: #0000ee;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 300px;
+      padding: 6px;
+      margin-top: 4px;
+    }
+    textarea {
+      height: 80px;
+    }
+    .radio-group {
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>메뉴</h1>
+    <nav>
+      <ul>
+        <li><a href="#signup">회원가입</a></li>
+        <li><a href="#profile">프로필 정보</a></li>
+        <li><a href="#contact">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <hr />
+    <section id="signup">
+      <h2>회원가입</h2>
+      <form>
+        <label>사용자 이름:
+          <input type="text" placeholder="사용자 이름 입력" />
+        </label>
+        <label>이메일:
+          <input type="email" placeholder="example@example.com" />
+        </label>
+        <label>비밀번호:
+          <input type="password" placeholder="비밀번호 입력" />
+        </label>
+        <label>나이:
+          <input type="number" placeholder="나이 입력" />
+        </label>
+        <div class="radio-group">
+          성별:
+          <label><input type="radio" name="gender" /> 남성</label>
+          <label><input type="radio" name="gender" /> 여성</label>
+        </div>
+        <label>자기소개:
+          <textarea placeholder="자기소개를 입력하세요"></textarea>
+        </label>
+        <label>좋아하는 취미:
+          <select>
+            <option>축구</option>
+            <option>농구</option>
+            <option>음악</option>
+            <option>게임</option>
+          </select>
+        </label>
+        <label>프로필 사진 업로드:
+          <input type="file" />
+        </label>
+      </form>
+    </section>
+
+    <hr />
+    <section id="profile">
+      <h2>프로필 정보</h2>
+      <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse;">
+        <thead>
+          <tr style="background-color: #f0f0f0;">
+            <th colspan="2">프로필 정보 요약</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 25%;">프로필</td>
+            <td>
+              <div style="width: 150px; height: 150px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">150×150</div>
+            </td>
+          </tr>
+          <tr><td>이름</td><td></td></tr>
+          <tr><td>이메일</td><td></td></tr>
+          <tr><td>나이</td><td></td></tr>
+          <tr><td>성별</td><td></td></tr>
+          <tr><td>자기소개</td><td></td></tr>
+        </tbody>
+      </table>
+      <p>프로필 정보가 성공적으로 업데이트되었습니다.</p>
+    </section>
+
+    <hr />
+    <section id="contact">
+      <h2>문의하기</h2>
+      <p>문의: <a href="mailto:example@example.com">example@example.com</a></p>
+      <p>전화: 010-1234-5678</p>
+      <p>주소: 서울특별시 중구 예제로 123</p>
+      <h3>오시는 길</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.985538570411!2d127.02762151564073!3d37.49791273444359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1588bbfdb29%3A0x46cf84c91cf69f15!2z6rSR7KO86rWt7KCQ!5e0!3m2!1sko!2skr!4v1614327519602!5m2!1sko!2skr"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2024 프로필 관리 페이지</p>
+  </footer>
+</body>
+</html>
